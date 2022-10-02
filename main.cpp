@@ -1,9 +1,9 @@
 #include "func.h"
 
 int main(){
-    CPoint a(1,2), b(2,4);
+    Point a(1, 2), b(2, 4);
     CDist c(1,2), d(2,4);
-    CPoint pA[] = {a, b}, pB[] = {b, a};
+    Point pA[] = {a, b}, pB[] = {b, a};
     CDist dA[] = {c, d};//, dB[] = {d, c};
     CPointer aP = CPointer(pA), bP = CPointer(pB);
     CDistance aD = CDistance(dA);//, bD = CDistance(dB);
