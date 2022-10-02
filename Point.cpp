@@ -20,7 +20,7 @@ Point Point::operator + (const Dist& d) const{ //оператор сложени
     return p;
 }
 
-ostream& operator<<(ostream& os, const Point& p)
+ostream& operator << (ostream& os, const Point& p)
 {
     os << "X:" << p.x << ", Y:" << p.y << " ";
     return os;

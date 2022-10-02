@@ -15,8 +15,8 @@ public:
     CDist(Dist a[N]);
     CDist(const CDist&);
     CPoint operator+(const CPoint &b) const;
-    CPoint& operator++();
-    CPoint& operator--();
+    CDist& operator++();
+    CDist& operator--();
 
     friend ostream &operator<<(ostream &, const CDist &);
 
