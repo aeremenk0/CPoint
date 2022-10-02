@@ -15,6 +15,7 @@ public:
     CDist(Dist a[N]);
     CDist(const CDist&);
     CPoint operator+(const CPoint &b) const;
+
     CDist& operator++();
     CDist& operator--();
 

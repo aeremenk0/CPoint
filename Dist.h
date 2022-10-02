@@ -11,17 +11,17 @@ public:
 //    Dist();
 
     Dist(int x, int y);
-
+    Dist(const Dist&);
 
 // What for?
 //    void printl();
 //    double X1() const;
 //    double Y1() const;
 
-    Point operator+(const Point &b) const;
+    Point operator + (const Point &b) const;
 
     friend class Point;
-    friend ostream& operator<<(ostream& os, const Dist& p);
+    friend ostream& operator << (ostream& os, const Dist& p);
 };
 
 #endif //CPOINT_DIST_H

@@ -16,6 +16,9 @@ public:
     CPoint operator+(const CDist &b) const;
     CDist operator-(const CPoint &a) const;
 
+    CPoint& operator++();
+    CPoint& operator--();
+
     friend ostream &operator<<(ostream &, const CPoint &);
 
     friend class CPoint;
