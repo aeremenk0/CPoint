@@ -1,13 +1,10 @@
 #ifndef CPOINT_CPOINT_H
 #define CPOINT_CPOINT_H
 
-#include <iostream>
 #include "Point.h"
-#define N 2
+#include "CDist.h"
 
 using namespace std;
-
-class CDist;
 
 class CPoint {
     Point arr[N];
@@ -16,12 +13,12 @@ public:
     CPoint operator+(const CDist &b) const;
     CDist operator-(const CPoint &a) const;
 
-    CPoint& operator++();
-    CPoint& operator--();
+    //CPoint& operator++();
+    //CPoint& operator--();
 
     friend ostream &operator<<(ostream &, const CPoint &);
 
-    friend class CPoint;
+    friend class Point;
     friend class CDist;
 };
 

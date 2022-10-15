@@ -1,26 +1,20 @@
 #ifndef CPOINT_DIST_H
 #define CPOINT_DIST_H
 
+#include <iostream>
+#include "Point.h"
 
-class Point;
+using namespace std;
 
 class Dist {
     int x, y;
 public:
-//    What for???
-//    Dist();
-
     Dist(int x, int y);
-    Dist(const Dist&);
-
-// What for?
-//    void printl();
-//    double X1() const;
-//    double Y1() const;
-
+    //Dist(const Dist&);
     Point operator + (const Point &b) const;
 
     friend class Point;
+    friend class CDist;
     friend ostream& operator << (ostream& os, const Dist& p);
 };
 

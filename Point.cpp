@@ -1,14 +1,18 @@
-#include "Point.h"
+#include <iostream>
 #include "Dist.h"
+#include "Point.h"
+#define N 2
+
+using namespace std;
 
 Point::Point(int x, int y) {
     this -> x = x;
     this -> y = y;
 }
 
-Point::Point(const Point& p) {
+/*Point::Point(const Point& p) {
     Point(p.x, p.y);
-}
+}*/
 
 Dist Point::operator - (const Point& b) const{
     Dist d(x - b.x, y - b.y);
@@ -22,6 +26,6 @@ Point Point::operator + (const Dist& d) const{ //оператор сложени
 
 ostream& operator << (ostream& os, const Point& p)
 {
-    os << "X:" << p.x << ", Y:" << p.y << " ";
+    os << "(X:" << p.x << ", Y:" << p.y << ")";
     return os;
 }

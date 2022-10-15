@@ -1,16 +1,15 @@
-#ifndef CPOINT_CDIST_H
-#define CPOINT_CDIST_H
+#pragma once
 
 #include <iostream>
+
 #include "Dist.h"
-#define N 2
 
 using namespace std;
 
 class CPoint;
 
 class CDist {
-    Dist arr[N];
+    Dist brr[N];
 public:
     CDist(Dist a[N]);
     CDist(const CDist&);
@@ -21,8 +20,6 @@ public:
 
     friend ostream &operator<<(ostream &, const CDist &);
 
+    friend class Dist;
     friend class CPoint;
-    friend class CDist;
 };
-
-#endif //CPOINT_CDIST_H

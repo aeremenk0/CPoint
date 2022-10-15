@@ -6,9 +6,9 @@ Dist::Dist(int x, int y) {
     this -> y = y;
 }
 
-Dist::Dist(const Dist& p) {
+/*Dist::Dist(const Dist& p) {
     Dist(p.x, p.y);
-}
+}*/
 
 Point Dist::operator + (const Point& p) const {
     Point result(x + p.x, y + p.y);
@@ -16,6 +16,6 @@ Point Dist::operator + (const Point& p) const {
 }
 
 ostream& operator << (ostream& os, const Dist& d) {
-    os << "D_X:" << d.x << ", D_Y:" << d.y << " ";
+    os << "(D_X:" << d.x << ", D_Y:" << d.y << ")";
     return os;
 }

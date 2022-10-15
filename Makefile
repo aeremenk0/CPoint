@@ -8,12 +8,18 @@ GCC_COMMAND = g++ -W -Wall -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wcast-
 Dist.o: Dist.cpp
 	$(GCC_COMMAND) -fno-elide-constructors -std=c++11  ./Dist.cpp -c
 
+CDist.o: CDist.cpp
+	$(GCC_COMMAND) -fno-elide-constructors -std=c++11  ./CDist.cpp -c
+
 Point.o: Point.cpp
 	$(GCC_COMMAND) -fno-elide-constructors -std=c++11  ./Point.cpp -c
+
+CPoint.o: CPoint.cpp
+	$(GCC_COMMAND) -fno-elide-constructors -std=c++11  ./CPoint.cpp -c
 
 main.o:main.cpp
 	$(GCC_COMMAND) -fno-elide-constructors -std=c++11  ./main.cpp -c
 
-all: Point.o main.o Dist.o
+all: Point.o main.o Dist.o CDist.o CPoint.o
 	$(GCC_COMMAND) -fno-elide-constructors -std=c++11  -o runner ./main.o ./Point.o ./Dist.o
 
