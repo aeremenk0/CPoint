@@ -7,11 +7,12 @@
 using namespace std;
 
 class CPoint {
-    Point arr[N];
+    Point* brr;
+    int len = 0;
 public:
-    CPoint(Point a[N]);
-    CPoint operator+(const CDist &b) const;
-    CDist operator-(const CPoint &a) const;
+    CPoint(Point* a, int len);
+    // CPoint operator+(const CDist &b) const;
+    // CDist operator-(const CPoint &a) const;
 
     //CPoint& operator++();
     //CPoint& operator--();

@@ -1,8 +1,6 @@
 #ifndef CPOINT_POINT_H
 #define CPOINT_POINT_H
 
-#define N 2
-
 #include <iostream>
 using namespace std;
 
@@ -11,6 +9,7 @@ class Dist;
 class Point {
     int x, y;
 public:
+    Point();
     Point(int x, int y);
     //Point(const Point&);
 

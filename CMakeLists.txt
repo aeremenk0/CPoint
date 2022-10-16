@@ -5,13 +5,14 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(
-        Point.h
-        Point.cpp
-        Dist.h
-        Dist.cpp
-        CPoint.h
-        CPoint.cpp
+add_executable(CPoint
         CDist.h
-        CDist.cpp
-        main.cpp)
+        CPoint.h
+        Dist.cpp
+        Dist.h
+        #func.cpp
+        #func.h
+        main.cpp
+        Point.cpp
+        Point.h CDist.cpp
+        CPoint.cpp CDist.h)
