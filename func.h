@@ -6,12 +6,12 @@ using namespace std;
 
 class CDist;
 
-class CPoint {
+class Point {
     double x, y;
 public:
-    CPoint();
+    Point();
 
-    CPoint(double x, double y);
+    Point(double x, double y);
 
     double X() const;
 
@@ -19,9 +19,9 @@ public:
 
     void printl();
 
-    CPoint operator+(const CDist &b) const;
+    Point operator+(const CDist &b) const;
 
-    CDist operator-(const CPoint &b) const;
+    CDist operator-(const Point &b) const;
 
     friend class CPointer;
 };
@@ -39,7 +39,7 @@ public:
 
     double Y1() const;
 
-    CPoint operator+(const CPoint &b) const;
+    Point operator+(const Point &b) const;
 };
 
 class CPointer;
@@ -59,9 +59,9 @@ public:
 };
 
 class CPointer {
-    CPoint arr[N];
+    Point arr[N];
 public:
-    CPointer(CPoint a[N]);
+    CPointer(Point a[N]);
 
     void print();
 
